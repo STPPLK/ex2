@@ -6,3 +6,7 @@ app.get('/', (req, res) => res.send('Sudthipong Pralakam'))
 app.get('/about', (req, res) => res.send('เกี่ยวกับเรา'))
 app.get('/contact', (req, res) => res.send('ติดต่อเรา'))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+app.get('/test', (req, res) => {
+    res.json({message: "test"})
+})
